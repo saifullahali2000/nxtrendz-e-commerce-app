@@ -105,7 +105,6 @@ class AllProductsSection extends Component {
       method: 'GET',
     }
     const response = await fetch(apiUrl, options)
-    console.log(response)
     if (response.ok) {
       const fetchedData = await response.json()
       const updatedData = fetchedData.products.map(product => ({
